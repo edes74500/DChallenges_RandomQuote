@@ -5,4 +5,4 @@ Utilisation de l'API **https://api.quotable.io/**
 
 ## [Decouvrir l'app Quote Generator](https://edes74500.github.io/DChallenges_RandomQuote/)
 
-**![app Random Quote](/assets/Screenshot/desktop.jpg)**
+**![app Random Quote](/assets/screenshot/desktop.jpg)**
