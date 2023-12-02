@@ -1,1 +1,98 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: outfit;
+  font-weight: 400 800;
+  src: url(./assets/fonts/Outfit-VariableFont_wght.ttf);
+}
+* {
+  font-family: outfit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #111729;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.app-container .quote-container {
+  background-color: #20293a;
+  background-image: url(./assets/img/bg-image-random-quote.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  color: white;
+  max-width: 600px;
+  min-height: 25vh;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.app-container .quote-container h3 {
+  font-size: 1rem;
+}
+.app-container .quote-container .tags-container {
+  font-size: 0.625rem;
+  padding: 1rem 0;
+}
+.app-container .quote-container .tags-container span {
+  margin: 0 0.2rem;
+  padding: 0.2rem 1rem;
+  font-weight: 600;
+  color: #6466e9;
+  border-radius: 20px;
+  border: 1px #6466e9 solid;
+}
+.app-container .quote-container .quote {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #96a4b5;
+}
+.app-container .btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+  border: #20293a 2px solid;
+  border-radius: 10px;
+  height: auto;
+}
+.app-container .btn-container img:first-child {
+  border-right: #20293a 2px solid;
+}
+.app-container .btn-container img {
+  margin: 0;
+  min-height: 2.7rem;
+  padding: 0.4rem 0.8rem;
+}/*# sourceMappingURL=style.css.map */
