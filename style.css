@@ -88,11 +88,16 @@ body {
   border-radius: 10px;
   height: auto;
 }
-.app-container .btn-container img:first-child {
+.app-container .btn-container div:first-of-type {
   border-right: #20293a 2px solid;
 }
 .app-container .btn-container img {
   margin: 0;
+  cursor: pointer;
   min-height: 2.7rem;
   padding: 0.4rem 0.8rem;
+}
+.app-container .btn-container img:hover {
+  -webkit-filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(101deg) brightness(107%) contrast(107%);
+          filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(101deg) brightness(107%) contrast(107%);
 }/*# sourceMappingURL=style.css.map */

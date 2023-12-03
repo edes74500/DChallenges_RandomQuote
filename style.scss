@@ -74,13 +74,19 @@ body {
     border: $grey 2px solid;
     border-radius: 10px;
     height: auto;
-    img:first-child {
+    & div:first-of-type {
       border-right: $grey 2px solid;
     }
     img {
       margin: 0;
+      cursor: pointer;
       min-height: 2.7rem;
       padding: 0.4rem 0.8rem;
+      &:hover {
+        // border-radius: 10px 0 0 10px;
+        // border: $grey 2px solid;
+        filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(101deg) brightness(107%) contrast(107%);
+      }
     }
   }
 }
