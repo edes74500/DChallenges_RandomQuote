@@ -125,18 +125,13 @@ body {
             transform: translate3d(-50%, -50%, 0) rotate(360deg);
   }
 }
-.spin {
-  opacity: 1;
-}
-
 .wait {
   position: relative;
 }
-.wait h3 {
-  color: #96a4b5;
+.wait .spin {
+  opacity: 1;
 }
-
-.spin::before {
+.wait .spin::before {
   -webkit-animation: 1.5s linear infinite spinner;
           animation: 1.5s linear infinite spinner;
   -webkit-animation-play-state: inherit;
@@ -153,4 +148,7 @@ body {
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
   will-change: transform;
+}
+.wait h3 {
+  color: #96a4b5;
 }/*# sourceMappingURL=style.css.map */
