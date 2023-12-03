@@ -46,8 +46,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: none;
 }
 .app-container .quote-container {
+  position: relative;
   background-color: #20293a;
   background-image: url(./assets/img/bg-image-random-quote.svg);
   background-size: contain;
@@ -100,4 +102,55 @@ body {
 .app-container .btn-container img:hover {
   -webkit-filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(101deg) brightness(107%) contrast(107%);
           filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(101deg) brightness(107%) contrast(107%);
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(0deg);
+            transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(360deg);
+            transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(0deg);
+            transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(360deg);
+            transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+.spin {
+  opacity: 1;
+}
+
+.wait {
+  position: relative;
+}
+.wait h3 {
+  color: #96a4b5;
+}
+
+.spin::before {
+  -webkit-animation: 1.5s linear infinite spinner;
+          animation: 1.5s linear infinite spinner;
+  -webkit-animation-play-state: inherit;
+          animation-play-state: inherit;
+  border: solid 5px #96a4b5;
+  border-bottom-color: #1c87c9;
+  border-radius: 50%;
+  content: "";
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
 }/*# sourceMappingURL=style.css.map */
